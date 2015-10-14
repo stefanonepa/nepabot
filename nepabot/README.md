@@ -1,4 +1,0 @@
-﻿# nepabot
-
-simple telegram bot
-
