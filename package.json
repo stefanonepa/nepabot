@@ -3,14 +3,14 @@
   "version": "0.0.1",
   "description": "nepabot",
   "main": "app.js",
-
   "author": {
     "name": "nepa",
     "email": ""
   },
-
   "dependencies": {
-    "node-telegram-bot-api": "0.15.0",
-    "azure": "^0.10.6"
+    "azure": "^0.10.6",
+    "node-telegram-bot-api": "^0.15.0",
+    "request": "^2.65.0",
+    "moment": "^2.10.6"
   }
 }
