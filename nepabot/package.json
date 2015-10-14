@@ -1,0 +1,16 @@
+{
+  "name": "nepabot",
+  "version": "0.0.1",
+  "description": "nepabot",
+  "main": "app.js",
+
+  "author": {
+    "name": "nepa",
+    "email": ""
+  },
+
+  "dependencies": {
+    "node-telegram-bot-api": "0.15.0",
+    "azure": "^0.10.6"
+  }
+}
