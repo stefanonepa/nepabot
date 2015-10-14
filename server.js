@@ -2,7 +2,6 @@
 var port = process.env.PORT || 1337;
 
 var TelegramBot = require('node-telegram-bot-api');
-var azure = require('azure');
 var token ;
 
 azure.RoleEnvironment.getConfigurationSettings(function (error, settings) {
@@ -12,7 +11,7 @@ azure.RoleEnvironment.getConfigurationSettings(function (error, settings) {
         
         bot.on('message', function (msg) {
             var chatId = msg.chat.id;
-            bot.sendMeassage(chatId, "hello!");
+            bot.sendMessage(chatId, "hello!");
         });
     }
 });
