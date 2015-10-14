@@ -2,7 +2,7 @@
 var port = process.env.PORT || 1337;
 
 var TelegramBot = require('node-telegram-bot-api');
-var token ;
+var azure = require('azure');
 
 azure.RoleEnvironment.getConfigurationSettings(function (error, settings) {
     if (!error) {
@@ -18,5 +18,5 @@ azure.RoleEnvironment.getConfigurationSettings(function (error, settings) {
 
 http.createServer(function (req, res) {
     res.writeHead(200, { 'Content-Type': 'text/plain' });
-    res.end('Hello Nepabot');
+    res.end('Hello Nepabot2');
 }).listen(port);
