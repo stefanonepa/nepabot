@@ -1,2 +1,4 @@
-# nepabot
-my personnal bot
+﻿# nepabot
+
+simple telegram bot
+
