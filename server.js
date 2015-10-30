@@ -1,4 +1,4 @@
-﻿var request = require('request');
+﻿﻿var request = require('request');
 var moment = require('moment');
 var TelegramBot = require('node-telegram-bot-api');
 var token = process.env.botkey;
@@ -28,30 +28,35 @@ bot.on('message', function (msg) {
     var chatId = msg.chat.id;
 
     if (msg.text == '/next') {
-        
         var opts = {
             reply_to_message_id: msg.message_id,
             reply_markup: JSON.stringify({
                 keyboard: [
-                    ['Metro from EPFL to lausanne'],
-                    ['Metro from EPFL to renens']],
+                    ['Metro from EPFL to Lausanne'],
+                    ['Metro from EPFL to Renens'],
+                    ['Metro from Lausanne to EPFL'],
+                    ['Metro from Renens to EPFL']],
                 one_time_keyboard: true
             }),
             ForceReply: true
         };
         bot.sendMessage(chatId, 'Where do you want to go?', opts);
-    } else if (msg.text == 'Metro from EPFL to lausanne') {
+    } else if (msg.text == 'Metro from EPFL to Lausanne') {
         sendTimeTables('http://transport.opendata.ch/v1/connections?from=EPFL&to=Lausanne', msg);
-    } else if (msg.text == 'Metro from EPFL to renens') {
-        sendTimeTables('http://transport.opendata.ch/v1/connections?from=EPFL&to=renens', msg);
-    } else if (msg.text == '/help') { 
-        
+    } else if (msg.text == 'Metro from EPFL to Renens') {
+        sendTimeTables('http://transport.opendata.ch/v1/connections?from=EPFL&to=Renens', msg);
+    } else if (msg.text == 'Metro from Lausanne to EPFL') {
+        sendTimeTables('http://transport.opendata.ch/v1/connections?from=Lausanne&to=EPFL', msg);
+    } else if (msg.text == 'Metro from Renens to EPFL') {
+        sendTimeTables('http://transport.opendata.ch/v1/connections?from=Renens&to=EPFL', msg);
+    } else if (msg.text == '/help') {
+        bot.sendMessage(chatId, "https://github.com/stefanonepa/nepabot");
     } else {
         bot.sendMessage(chatId, msg.text);
     }
 });
-        
-        
+
+
 var http = require('http')
 var port = process.env.PORT || 1337;
 http.createServer(function (req, res) {
