@@ -1,0 +1,26 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.12.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:hawk:20160119':
+    - azure > azure-asm-network > azure-common > request > hawk:
+        patched: '2018-05-23T23:17:32.852Z'
+    - azure > azure-asm-website > azure-common > request > hawk:
+        patched: '2018-05-23T23:17:32.852Z'
+    - azure > azure-arm-dns > azure-common > request > hawk:
+        patched: '2018-05-23T23:17:32.852Z'
+    - azure > azure-arm-keyvault > azure-common > request > hawk:
+        patched: '2018-05-23T23:17:32.852Z'
+  'npm:moment:20160126':
+    - azure > azure-asm-website > moment:
+        patched: '2018-05-23T23:17:32.852Z'
+  'npm:request:20160119':
+    - azure > azure-asm-network > azure-common > request:
+        patched: '2018-05-23T23:17:32.852Z'
+    - azure > azure-asm-website > azure-common > request:
+        patched: '2018-05-23T23:17:32.852Z'
+    - azure > azure-arm-dns > azure-common > request:
+        patched: '2018-05-23T23:17:32.852Z'
+    - azure > azure-arm-keyvault > azure-common > request:
+        patched: '2018-05-23T23:17:32.852Z'
