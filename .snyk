@@ -1,0 +1,64 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.12.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:http-signature:20150122':
+    - azure > azure-asm-storage > azure-common > request > http-signature:
+        patched: '2018-07-03T07:50:12.719Z'
+    - azure > request > http-signature:
+        patched: '2018-07-03T07:50:12.719Z'
+    - azure > azure-asm-compute > azure-common > request > http-signature:
+        patched: '2018-07-03T07:50:12.719Z'
+    - azure > azure-asm-hdinsight > azure-common > request > http-signature:
+        patched: '2018-07-03T07:50:12.719Z'
+    - azure > azure-asm-network > azure-common > request > http-signature:
+        patched: '2018-07-03T07:50:12.719Z'
+    - azure > azure-monitoring > azure-common > request > http-signature:
+        patched: '2018-07-03T07:50:12.719Z'
+    - azure > azure-asm-scheduler > azure-common > request > http-signature:
+        patched: '2018-07-03T07:50:12.719Z'
+    - azure > azure-asm-mgmt > azure-common > request > http-signature:
+        patched: '2018-07-03T07:50:12.719Z'
+    - azure > azure-scheduler > azure-common > request > http-signature:
+        patched: '2018-07-03T07:50:12.719Z'
+    - azure > azure-asm-store > azure-common > request > http-signature:
+        patched: '2018-07-03T07:50:12.719Z'
+    - azure > azure-sb > azure-common > request > http-signature:
+        patched: '2018-07-03T07:50:12.719Z'
+    - azure > azure-asm-trafficmanager > azure-common > request > http-signature:
+        patched: '2018-07-03T07:50:12.719Z'
+    - azure > azure-asm-sql > azure-common > request > http-signature:
+        patched: '2018-07-03T07:50:12.719Z'
+    - azure > azure-asm-sb > azure-common > request > http-signature:
+        patched: '2018-07-03T07:50:12.719Z'
+    - azure > azure-common > request > http-signature:
+        patched: '2018-07-03T07:50:12.719Z'
+    - azure > azure-arm-authorization > azure-common > request > http-signature:
+        patched: '2018-07-03T07:50:12.719Z'
+    - azure > azure-arm-dns > azure-common > request > http-signature:
+        patched: '2018-07-03T07:50:12.719Z'
+    - azure > azure-asm-subscription > azure-common > request > http-signature:
+        patched: '2018-07-03T07:50:12.719Z'
+    - azure > azure-arm-keyvault > azure-common > request > http-signature:
+        patched: '2018-07-03T07:50:12.719Z'
+    - azure > azure-arm-insights > azure-common > request > http-signature:
+        patched: '2018-07-03T07:50:12.719Z'
+    - azure > azure-keyvault > azure-common > request > http-signature:
+        patched: '2018-07-03T07:50:12.719Z'
+    - azure > azure-asm-website > azure-common > request > http-signature:
+        patched: '2018-07-03T07:50:12.719Z'
+    - azure > azure-arm-compute > azure-common > request > http-signature:
+        patched: '2018-07-03T07:50:12.719Z'
+    - azure > azure-gallery > azure-common > request > http-signature:
+        patched: '2018-07-03T07:50:12.719Z'
+    - azure > azure-arm-storage > azure-common > request > http-signature:
+        patched: '2018-07-03T07:50:12.719Z'
+    - azure > azure-arm-website > azure-common > request > http-signature:
+        patched: '2018-07-03T07:50:12.719Z'
+    - azure > azure-storage > request > http-signature:
+        patched: '2018-07-03T07:50:12.719Z'
+    - azure > azure-arm-network > azure-common > request > http-signature:
+        patched: '2018-07-03T07:50:12.719Z'
+    - azure > azure-arm-resource > azure-common > request > http-signature:
+        patched: '2018-07-03T07:50:12.719Z'
