@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "azure": "^0.10.6",
-    "node-telegram-bot-api": "^0.15.0",
+    "node-telegram-bot-api": "^0.64.0",
     "request": "^2.65.0",
     "moment": "^2.10.6"
   }
